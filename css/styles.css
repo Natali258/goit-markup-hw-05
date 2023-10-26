@@ -795,7 +795,7 @@ body {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--light-slate);
+    color: var(--bg-backdrop);
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -831,18 +831,19 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
 }
-input[type='checkbox']:checked + .checkbox-form {
+
+input[type='checkbox']:checked + .form-checkbox .checkbox-form {
     background-color: var(--color-change);
     border: none;
     fill: var(--bgteam)
 }
-.checkbox-icon {
+/* .checkbox-icon {
     fill: transparent;
     transition: fill var(--bg-backdrop);
 }
 input[type='checkbox']:checked + .checkbox-form > .checkbox-icon {
     fill: var(--bgteam);
-}
+} */
 
 .form-agreement-link {
     font-size: 12px;
